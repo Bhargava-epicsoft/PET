@@ -1,5 +1,9 @@
 #PET - PDF Extraction Tool
 
+A tool which automates the process of data extraction from a PDF file.
+
+A key library used for the development of this was [PDF.js](http://mozilla.github.io/pdf.js/)
+
 ###Setup
 1.Place the PDFNamedDestination EXE into your executables
 
