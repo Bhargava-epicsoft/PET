@@ -10,7 +10,11 @@
 4.Run PET-Generator on a django server on localhost server 8002
 
 ###Running
-Go to localhost:8080/home (perform any auto-tagging and wait)
+Go to localhost:8080/home
+
+Open example PDF in viewer
+
+Perform any auto tagging first (may take a while)
 
 
 
