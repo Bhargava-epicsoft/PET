@@ -1,0 +1,32 @@
+Outcome,Adverse effect,General,Treatment Emergent Adverse Event (TEAT),Treatment Emergent Adverse Event ,TEAT
+Outcome,Adverse effect,General,Treatment Emergent Symptoms Scale (TESS),Treatment Emergent Symptoms Scale ,TESS
+Outcome,Adverse effect,General,UKU Side Effect Rating Scale (UKUSERS),UKU Side Effect Rating Scale ,UKUSERS
+Outcome,Adverse effect,Movement disorders,Abnormal Involuntary Movement Scale (AIMS),Abnormal Involuntary Movement Scale ,AIMS
+Outcome,Adverse effect,Movement disorders,Barnes Akathisia Rating Scale (BARS),Barnes Akathisia Rating Scale ,BARS
+Outcome,Adverse effect,Movement disorders,Barnes Akathisia Scale (BAS),Barnes Akathisia Scale ,BAS
+Outcome,Adverse effect,Movement disorders,Extrapyramidal side effects (EPS),Extrapyramidal side effects ,EPS
+Outcome,Adverse effect,Movement disorders,Extrapyramidal Symptom Rating Scale (ESRS),Extrapyramidal Symptom Rating Scale ,ESRS
+Outcome,Adverse effect,Movement disorders,Simpson & Angus Neurological Rating Scale for Extrapyramidal Effects / Simpson-Angus Scale (SAS),Simpson & Angus Neurological Rating Scale for Extrapyramidal Effects / Simpson-Angus Scale ,SAS
+Outcome,Behaviour,General,Nurses Observation Scale for Inpatient Evaluation (NOSIE),Nurses Observation Scale for Inpatient Evaluation ,NOSIE
+Outcome,Cognition,,Wechsler Adult Intelligence Scale - Revised (WAIS-R),Wechsler Adult Intelligence Scale - Revised ,WAIS-R
+Outcome,Cognition,,Wisconsin Card Sorting Test (WCST),Wisconsin Card Sorting Test ,WCST
+Outcome,Functioning,General,Global Assessment of Function Scale (GAF),Global Assessment of Function Scale ,GAF
+Outcome,Global impression,Specific,Social Disability Screening Schedule (SDSS),Social Disability Screening Schedule ,SDSS
+Outcome,Global impression,General,Clinical Global Impression (CGI),Clinical Global Impression ,CGI
+Outcome,Global impression,General,Clinical Global Impression - Improvement (CGI-I),Clinical Global Impression - Improvement ,CGI-I
+Outcome,Global impression,General,Clinical Global Impression - Severity of illness (CGI-S),Clinical Global Impression - Severity of illness ,CGI-S
+Outcome,Global impression,General,Global Assessment Scale (GAS),Global Assessment Scale ,GAS
+Outcome,Global impression,,Inpatient Multidimensional Psychiatric Rating Scale (IMPRS),Inpatient Multidimensional Psychiatric Rating Scale ,IMPRS
+Outcome,Insight,,Drug Attitude Inventory (DAI),Drug Attitude Inventory ,DAI
+Outcome,Mental state,General,Brief Psychiatric Rating Scale (BPRS),Brief Psychiatric Rating Scale ,BPRS
+Outcome,Mental state,Specific,Beck Depression Inventory (BDI),Beck Depression Inventory ,BDI
+Outcome,Mental state,Specific,Calgary Depression Scale for Schizophrenia (CDSS),Calgary Depression Scale for Schizophrenia ,CDSS
+Outcome,Mental state,Specific,Hamilton Depression Scale (HAM-D),Hamilton Depression Scale ,HAM-D
+Outcome,Mental state,Specific,Montgomery and Asberg Depression Rating Scale (MADRS),Montgomery and Asberg Depression Rating Scale ,MADRS
+Outcome,Mental state,Specific,Positive and negative symptom scale (PANSS),Positive and negative symptom scale ,PANSS
+Outcome,Mental state,Specific,Scale for the Assessment of Negative Symptoms (SANS),Scale for the Assessment of Negative Symptoms ,SANS
+Outcome,Mental state,Specific,Scale for the Assessment of Positive Symptoms (SAPS),Scale for the Assessment of Positive Symptoms ,SAPS
+Outcome,Physical state,Specific,Body Mass Index (BMI),Body Mass Index ,BMI
+Outcome,Physical state,Specific,Electrocardiogram (ECG),Electrocardiogram ,ECG
+Outcome,Physical state,Specific,Electroencephalogram (EEG),Electroencephalogram ,EEG
+Outcome,Quality of life,General,Quality of Life Scale (QLS),Quality of Life Scale ,QLS

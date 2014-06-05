@@ -1,0 +1,96 @@
+Electrocardiogram
+hello
+woof
+monkey
+pet 
+donkey
+
+ def printme( str ):
+        print str
+        return
+
+def hashVal( bloom, str ):
+        m = hashlib.md5()
+        m.digest_size(16)
+        m.update(str)
+        print m.hexdigest()
+        hash1 = reduce(lambda x, y: (x<<32)+ord(y), m.hexdigest(), 0)
+        print str 
+        bloom[hash1%1000] = 1
+        print hash1%1000
+        
+        p = hashlib.sha256()
+        p.update(str)
+        p.digest_size(16)
+        hash2 = reduce(lambda x, y: (x<<32)+ord(y), p.hexdigest(), 0)
+        bloom[hash2%1000] = 1
+        print hash2%1000
+        return bloom
+
+
+def check( bloom, str ):
+        m = hashlib.md5()
+        m.update(str)
+        m.digest_size(16)
+        print m.hexdigest()
+        hash1 = reduce(lambda x, y: (x<<32)+ord(y), m.hexdigest(), 0)
+
+        print "check " + str
+        print hash1%1000
+
+        if bloom[hash1%1000] != 1:
+            return False
+
+        p = hashlib.sha256()
+        p.update(str)
+        m.digest_size(16)
+        hash2 = reduce(lambda x, y: (x<<32)+ord(y), p.hexdigest(), 0)
+        if bloom[hash2%1000] != 1:
+            return False
+
+        print hash2%1000
+
+        return True
+
+
+class MainPage(webapp2.RequestHandler):
+
+    def get(self):
+
+    	template_parameters = {}
+    	template = JINJA_ENVIRONMENT.get_template('main.html')
+    	self.response.write(template.render(template_parameters))
+
+class GenerateTags(webapp2.RequestHandler):
+
+    def get(self):
+        
+        bloom = [0] * 1000
+
+        from google.appengine.ext import db
+
+        rules = db.GqlQuery("SELECT * FROM Rule")
+
+        var = [1,2]
+
+        for row in rules:
+            
+            bloom = hashVal(bloom, row.target)
+            bloom = hashVal(bloom, row.abbrev)
+
+
+        workpath = os.path.dirname(os.path.abspath(__file__)) #Returns the Path your .py file is in
+
+        with open(os.path.join(workpath,"data","test.txt"), 'rb') as f:
+            for line in f:
+                for word in line.split():
+                    if check(bloom,word):
+                        print word + "found"
+    
+
+        bloom = hashVal(bloom, "jacob")
+        print check(bloom, "jacob")
+
+        print check(bloom, "UKUSERS")
+        print check(bloom, "NOSIE")
+        print check(bloom, "Electrocardiogram")

@@ -1,0 +1,18 @@
+{% extends base_template %}
+{% load staticfiles %}
+{% block title %}Higher Level Documents{% endblock %}
+
+{% block center_block %}
+<div id='main_container'>
+
+    <div id="header_text">Generated files</div>
+
+    <table id="document_table">
+    <tr><td><div class="trow"><div class="inner">PDF file <a class="info" href=" " title="New PDF document generated with embedded named destinations.">i</a><a href="pdf/"><img src="{% static 'pdf-icon.png' %}" style="float:right; margin-top:-5px;" height="30" width="30"></a><div></div></div></td></tr>
+    <tr><td><div class="trow"><div class="inner">XML file <a class="info" href=" " title="XML document generated containing data extract.">i</a><a href="xml/"><img src="{% static 'xml-icon.png' %}" style="float:right; margin-top:-5px;" height="30" width="30"></a><div></div></div></td></tr>
+    </table>
+
+</div>
+
+
+{% endblock %}

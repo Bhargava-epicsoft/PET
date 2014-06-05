@@ -1,0 +1,34 @@
+application: your-app-id
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /stylesheets
+  static_dir: stylesheets
+  
+- url: /images
+  static_dir: images
+
+- url: /lib
+  static_dir: lib
+
+- url: /tmps
+  static_dir: tmps
+  application_readable: true
+
+- url: /templates
+  static_dir: templates
+  application_readable: true
+
+- url: /data
+  static_dir: data
+  application_readable: true
+
+- url: /.* 
+  script: urls.app
+  
+libraries:
+- name: jinja2
+  version: latest

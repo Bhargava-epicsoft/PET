@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="/stylesheets/main_styles.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="lib/js/jQuery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.js"></script>
+<script type="text/javascript" src="http://johnny.github.io/jquery-sortable/js/jquery-sortable-min.js"></script>
+<script type="text/javascript" src="https://raw.githubusercontent.com/mjsarfatti/nestedSortable/master/jquery.mjs.nestedSortable.js"></script>
+<script type="text/javascript" src="lib/js/scripts.js"></script>
+<script type="text/javascript" src="lib/js/underscore.js"></script>
+<title>{% block title %}Untitled{% endblock %}</title>
+</head>
+
+    <body>
+
+    	<script>
+    	$( document ).ready(function() {
+               $('.sortable').nestedSortable({
+            handle: 'div',
+            items: 'li',
+            toleranceElement: '> div'
+    });
+    	});
+    	</script>
+
+        <div id="main_container">
+            <input type="hidden" id="state" value=""/>
+            <div id="left_container"><div id="left_content">{% block left_content %}Untitled{% endblock %}</div></div>
+            <div id="right_container"><div id="right_content">{% block right_content %}Untitled{% endblock %}</div></div>
+
+        </div>
+
+    </body>
+
+</html>

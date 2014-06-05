@@ -1,0 +1,31 @@
+{% extends base_template %}
+{% block title %}Home{% endblock %}
+
+{% block left_content %} 
+<iframe id="iFrame" src="../static/lib/pdf_js/web/viewer.html" style="width: 100%; height: 92%; border:0px;"></iframe>
+<div id="input_footer"><input id="current_text" type="text"><button id="button_current_text">Add</button></div>
+{% endblock %}
+
+{% block right_content %}
+<table id="right_structure">
+    <tr height="0%">
+        <td style="margin-top:0%;">
+            <button class="button setAble" id="addTags"> Add Tags</button>
+            <button class="button setAble" id="removeTags"> Remove Tags</button>
+            <button class="button" onclick="autoTag()">Auto Tag</button>
+            <button class="button">Generate</button>
+        </td>
+    </tr>
+    <tr><td id="content">
+    <ol id="tagBox" class="sortable">
+        {% block fname %}{% endblock %}
+    </ol>
+    <form enctype="multipart/form-data" action="{{ upload_url }}" method="POST">
+    File: <input id='upload_file' type="file" name="file"><input id="upload_button" type="submit" value="Upload">
+    </form>
+
+    <input id="upload_url" type="hidden" value="lol">
+    <input id="upload_key" type="hidden" value="0">
+</td></tr>
+</table>
+{% endblock %}
